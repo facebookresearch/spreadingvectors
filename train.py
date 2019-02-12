@@ -15,11 +15,11 @@ from lib.net import Normalize, forward_pass, StraightThroughQuantizer
 from lib.quantizers import Zn
 import torch.nn.functional as F
 import torch
-import itertools as itrtools
+import itertools
 
 
 def repeat(l, r):
-    return list(itrtools.chain.from_iterable(itrtools.repeat(x, r) for x in l))
+    return list(itertools.chain.from_iterable(itertools.repeat(x, r) for x in l))
 
 
 def pairwise_NNs_inner(x):
