@@ -43,13 +43,13 @@ class Zn(Quantizer):
 
 
 class Identity(Quantizer):
-    def __init__(self):
+    def __init__(self, d):
         super(Identity, self).__init__()
-        self.bits = None
+        self.dim = d
+        self.bits = d * 4
 
     def quantize(self, x):
         assert x.ndim == 2
-        self.bits = 8 * x.nbytes // x.shape[0]
         return x
 
 try:
