@@ -143,7 +143,7 @@ To find out the number of bits needed to encode the vertices of a sphere in 48 d
 from lattices.Zn_lattice import ZnCodec
 import math
 
-d, r2 = 48, 40
+d, r2 = 48, 30
 # number of distinct vertices
 nv = ZnCodec(d, r2).nv
 
