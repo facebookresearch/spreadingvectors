@@ -19,7 +19,6 @@ ninja=1.8.2=py37h6bb024c_1
 numpy=1.15.4=py37h7e9f1db_0
 numpy-base=1.15.4=py37hde5b4d6_0
 openssl=1.1.1a=h7b6447c_0
-pip=18.1=py37_0
 pycparser=2.19=py37_0
 python=3.7.2=h0371630_0
 pytorch-cpu=1.0.0=py3.7_cpu_1
